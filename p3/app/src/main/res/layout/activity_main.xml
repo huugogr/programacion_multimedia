@@ -11,6 +11,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/rojo"
         android:text="@string/boton_cancelar"
         tools:layout_editor_absoluteX="160dp"
         tools:layout_editor_absoluteY="406dp" />
@@ -19,6 +20,7 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/verde"
         android:text="@string/boton_aceptar"
         tools:layout_editor_absoluteX="160dp"
         tools:layout_editor_absoluteY="234dp" />
