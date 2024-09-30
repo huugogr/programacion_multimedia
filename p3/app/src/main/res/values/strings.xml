@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">pr3</string>
+    <string name="boton_aceptar">Aceptar</string>
+    <string name="boton_cancelar">Cancelar</string>
 </resources>
