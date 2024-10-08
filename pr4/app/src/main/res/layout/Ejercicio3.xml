@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <View
+        android:id="@+id/view13"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_gravity="bottom|end"
+        android:background="#8BC34A" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_gravity="bottom|center"
+        android:background="#CDDC39" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_gravity="bottom|start"
+        android:background="#2196F3" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_gravity="center|end"
+        android:background="#E91E63" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_gravity="center|center"
+        android:background="#FFEB3B" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_gravity="center|start"
+        android:background="#8BC34A" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_gravity="top|end"
+        android:background="#03A9F4" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_gravity="top|center"
+        android:background="#9C27B0" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_gravity="top|start"
+        android:background="#F44336" />
+</FrameLayout>
