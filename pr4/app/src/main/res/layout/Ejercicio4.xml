@@ -8,7 +8,6 @@
     tools:context=".MainActivity">
 
     <View
-        android:id="@+id/view21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="2"
@@ -19,8 +18,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="#7E7B7B"
-        android:gravity="center"
-        >
+        android:gravity="center">
 
         <TableRow
             android:layout_width="match_parent"
@@ -29,18 +27,18 @@
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="100sp"
-                android:layout_height="100sp"
+                android:layout_width="102dp"
+                android:layout_height="102dp"
                 android:layout_margin="5sp"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="#00BCD4"
                 android:text="7" />
 
             <Button
                 android:id="@+id/button3"
-                android:layout_width="100sp"
-                android:layout_height="100sp"
+                android:layout_width="103dp"
+                android:layout_height="101dp"
                 android:layout_margin="5sp"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="#03A9F4"
                 android:text="8" />
 
             <Button
@@ -48,7 +46,7 @@
                 android:layout_width="100sp"
                 android:layout_height="100sp"
                 android:layout_margin="5sp"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="#2196F3"
                 android:text="9" />
 
             <Button
@@ -56,7 +54,7 @@
                 android:layout_width="100sp"
                 android:layout_height="100sp"
                 android:layout_margin="5sp"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="#3F51B5"
                 android:text="x" />
         </TableRow>
 
@@ -70,7 +68,7 @@
                 android:layout_width="100sp"
                 android:layout_height="100sp"
                 android:layout_margin="5sp"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="#3F51B5"
                 android:text="4" />
 
             <Button
@@ -78,7 +76,7 @@
                 android:layout_width="100sp"
                 android:layout_height="100sp"
                 android:layout_margin="5sp"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="#2196F3"
                 android:text="5" />
 
             <Button
@@ -86,7 +84,7 @@
                 android:layout_width="100sp"
                 android:layout_height="100sp"
                 android:layout_margin="5sp"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="#03A9F4"
                 android:text="6" />
 
             <Button
@@ -94,7 +92,7 @@
                 android:layout_width="100sp"
                 android:layout_height="100sp"
                 android:layout_margin="5sp"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="#00BCD4"
                 android:text="-" />
         </TableRow>
 
@@ -108,7 +106,7 @@
                 android:layout_width="100sp"
                 android:layout_height="100sp"
                 android:layout_margin="5sp"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="#00BCD4"
                 android:text="1" />
 
             <Button
@@ -116,7 +114,7 @@
                 android:layout_width="100sp"
                 android:layout_height="100sp"
                 android:layout_margin="5sp"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="#03A9F4"
                 android:text="2" />
 
             <Button
@@ -124,7 +122,7 @@
                 android:layout_width="100sp"
                 android:layout_height="100sp"
                 android:layout_margin="5sp"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="#2196F3"
                 android:text="3" />
 
             <Button
@@ -132,7 +130,7 @@
                 android:layout_width="100sp"
                 android:layout_height="100sp"
                 android:layout_margin="5sp"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="#3F51B5"
                 android:text="+" />
         </TableRow>
 
@@ -146,7 +144,7 @@
                 android:layout_width="100sp"
                 android:layout_height="100sp"
                 android:layout_margin="5sp"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="#673AB7"
                 android:text="," />
 
             <Button
@@ -154,7 +152,7 @@
                 android:layout_width="100sp"
                 android:layout_height="100sp"
                 android:layout_margin="5sp"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="#673AB7"
                 android:text="0" />
 
             <Button
@@ -163,7 +161,7 @@
                 android:layout_height="100sp"
                 android:layout_margin="5sp"
                 android:layout_weight="2"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="#673AB7"
                 android:text="=" />
 
         </TableRow>
