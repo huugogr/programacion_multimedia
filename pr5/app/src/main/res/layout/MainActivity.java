@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recView);
 
         juegos[ ] juegos = new juegos[2];
-        juegos[0] = new juegos("Fortnite", "Battle Royale");
+        juegos[0] = new juegos("Grand Thelf Auto", "Acción-Aventura");
         juegos[1] = new juegos("Valorant", "Tactical Shooter");
 
         Adaptador adapter = new Adaptador(juegos);
