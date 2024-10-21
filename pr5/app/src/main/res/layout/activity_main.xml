@@ -24,13 +24,15 @@
 
     <EditText
         android:id="@+id/cajaTextoCorreo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="244dp"
+        android:layout_height="57dp"
+        android:
+        android:background="#857979"
         android:ems="10"
         android:inputType="text"
+        android:textColor="@color/black"
         tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="229dp"
-        android: android:textColor="@color/black"/>
+        tools:layout_editor_absoluteY="229dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -47,8 +49,9 @@
 
     <EditText
         android:id="@+id/cajaTextoPass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="244dp"
+        android:layout_height="57dp"
+        android:background="#686161"
         android:ems="10"
         android:inputType="textPassword"
         tools:layout_editor_absoluteX="96dp"
