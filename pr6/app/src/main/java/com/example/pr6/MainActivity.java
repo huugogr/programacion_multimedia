@@ -1,4 +1,4 @@
-package com.example.pr5;
+package com.example.pr6;
 
 import android.os.Bundle;
 import android.view.View;
@@ -51,10 +51,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 textoOculto.setVisibility(View.VISIBLE);
                 textoOculto.setTextColor(getColor(R.color.green));
                 textoOculto.setText("Usuario y contraseña correcto.");
-                if(switch2.isChecked()){
-                    textoOculto2.setVisibility(View.VISIBLE);
-                    textoOculto2.setTextColor(getColor(R.color.green));
-                    textoOculto2.setText("Información de acceso almacenada correctamente.");
                 }
             } else {
                 textoOculto.setVisibility(View.VISIBLE);
