@@ -1,9 +1,9 @@
-package com.example.practica9;
+package com.example.pr9;
 
-import static com.example.practica9.Utilidades.RESULTADO_ERROR;
-import static com.example.practica9.Utilidades.RESULTADO_ERROR_DESCONOCIDO;
-import static com.example.practica9.Utilidades.RESULTADO_OK;
-import static com.example.practica9.Utilidades.URLSERVIDOR;
+import static com.example.pr9.Utilidades.RESULTADO_ERROR;
+import static com.example.pr9.Utilidades.RESULTADO_ERROR_DESCONOCIDO;
+import static com.example.pr9.Utilidades.RESULTADO_OK;
+import static com.example.pr9.Utilidades.URLSERVIDOR;
 
 import android.content.Context;
 import android.util.Log;
@@ -45,7 +45,7 @@ public class ControladorMonumento {
     /**
      * Obtiene todas los monumentos del servidor
      */
-    public void obtenerTodosMonumentos(VolleyCallBack callBack) throws ServidorPHPException
+    public void obtenerTodosMonumentos(com.example.pr9.VolleyCallBack callBack) throws com.example.pr9.ServidorPHPException
     {
         ArrayList<Monumento> monumentos = new ArrayList<>();
         try
@@ -94,17 +94,17 @@ public class ControladorMonumento {
                                             }
                                             break;
                                         case RESULTADO_ERROR:
-                                            throw new ServidorPHPException("Error, datos incorrectos.");
+                                            throw new com.example.pr9.ServidorPHPException("Error, datos incorrectos.");
                                         case RESULTADO_ERROR_DESCONOCIDO:
-                                            throw new ServidorPHPException("Error obteniendo los datos del servidor.");
+                                            throw new com.example.pr9.ServidorPHPException("Error obteniendo los datos del servidor.");
                                     }
                                 }
                                 else
                                 {
-                                    throw new ServidorPHPException("Error obteniendo los datos del servidor.");
+                                    throw new com.example.pr9.ServidorPHPException("Error obteniendo los datos del servidor.");
                                 }
                             }
-                            catch (JSONException | ServidorPHPException error)
+                            catch (JSONException | com.example.pr9.ServidorPHPException error)
                             {
                                 System.out.println("Error -> " + error.toString());
                             }
@@ -125,14 +125,14 @@ public class ControladorMonumento {
         }
         catch(Exception error)
         {
-            throw new ServidorPHPException(error.toString());
+            throw new com.example.pr9.ServidorPHPException(error.toString());
         }
     }
 
     /**
      * Obtiene un monumento del servidor según su ID
      */
-    public void obtenerMonumentoID(String ID, VolleyCallBack callBack) throws ServidorPHPException
+    public void obtenerMonumentoID(String ID, com.example.pr9.VolleyCallBack callBack) throws com.example.pr9.ServidorPHPException
     {
         Monumento monumento = new Monumento();
         try
@@ -144,7 +144,7 @@ public class ControladorMonumento {
             HashMap<String, String> parametros = new HashMap<>();
             // Meto los parámetros
             parametros.put("ID", ID);
-            String urlfinal = Utilidades.buildURL(URLOBTENERMONUMENTO, parametros);
+            String urlfinal = com.example.pr9.Utilidades.buildURL(URLOBTENERMONUMENTO, parametros);
             Log.w("a", urlfinal);
             JsonArrayRequest jsonObjectRequest = new JsonArrayRequest(
                     Request.Method.GET,
@@ -186,17 +186,17 @@ public class ControladorMonumento {
                                             callBack.onSuccess(contexto, monumentos);
                                             break;
                                         case RESULTADO_ERROR:
-                                            throw new ServidorPHPException("Error, datos incorrectos.");
+                                            throw new com.example.pr9.ServidorPHPException("Error, datos incorrectos.");
                                         case RESULTADO_ERROR_DESCONOCIDO:
-                                            throw new ServidorPHPException("Error obteniendo los datos del servidor.");
+                                            throw new com.example.pr9.ServidorPHPException("Error obteniendo los datos del servidor.");
                                     }
                                 }
                                 else
                                 {
-                                    throw new ServidorPHPException("Error obteniendo los datos del servidor.");
+                                    throw new com.example.pr9.ServidorPHPException("Error obteniendo los datos del servidor.");
                                 }
                             }
-                            catch (JSONException | ServidorPHPException e)
+                            catch (JSONException | com.example.pr9.ServidorPHPException e)
                             {
                                 System.out.println("Error -> " + e.toString());
                             }
@@ -217,7 +217,7 @@ public class ControladorMonumento {
         }
         catch(Exception e)
         {
-            throw new ServidorPHPException("Error -> " + e.toString());
+            throw new com.example.pr9.ServidorPHPException("Error -> " + e.toString());
         }
         Log.w("a", monumento.ciudad);
     }

@@ -1,18 +1,18 @@
 package com.example.pr9;
 
 public class Monumento {
-    private String id;
-    private String nombre;
-    private String ciudad;
-    private String descripcion;
-    private String fecha;
-    private String precio;
-    private String latitud;
-    private String moneda;
-    private String longitud;
-    private String visitable;
-    private String video;
-    private String image;
+    public String id;
+    public String nombre;
+    public String ciudad;
+    public String descripcion;
+    public String fecha;
+    public String precio;
+    public String latitud;
+    public String moneda;
+    public String longitud;
+    public String visitable;
+    public String video;
+    public String imagen;
 
     public Monumento() {
         this.id = "";
@@ -26,7 +26,7 @@ public class Monumento {
         this.longitud = "";
         this.visitable = "";
         this.video = "";
-        this.image = "";
+        this.imagen = "";
     }
     public Monumento(String id, String nombre, String ubicacion, String descripcion, String fecha, String precio, String latitud, String moneda, String longitud, String visitable, String video, String image) {
         this.id = id;
@@ -40,6 +40,6 @@ public class Monumento {
         this.longitud = longitud;
         this.visitable = visitable;
         this.video = video;
-        this.image = image;
+        this.imagen = imagen;
     }
 }

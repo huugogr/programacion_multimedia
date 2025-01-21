@@ -1,4 +1,4 @@
-package com.example.practica9;
+package com.example.pr9;
 
 import android.net.Uri;
 
