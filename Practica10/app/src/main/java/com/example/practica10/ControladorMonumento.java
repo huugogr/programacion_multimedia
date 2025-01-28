@@ -1,13 +1,16 @@
-package com.example.pr9;
+package com.example.practica10;
 
-import static com.example.pr9.Utilidades.RESULTADO_ERROR;
-import static com.example.pr9.Utilidades.RESULTADO_ERROR_DESCONOCIDO;
-import static com.example.pr9.Utilidades.RESULTADO_OK;
-import static com.example.pr9.Utilidades.URLSERVIDOR;
+import static com.example.practica10.Utilidades.RESULTADO_ERROR;
+import static com.example.practica10.Utilidades.RESULTADO_ERROR_DESCONOCIDO;
+import static com.example.practica10.Utilidades.RESULTADO_OK;
+import static com.example.practica10.Utilidades.URLSERVIDOR;
 
 import android.content.Context;
 import android.util.Log;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.volley.Request;
@@ -22,7 +25,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 
 public class ControladorMonumento {
 
@@ -40,7 +45,7 @@ public class ControladorMonumento {
     /**
      * Obtiene todas los monumentos del servidor
      */
-    public void obtenerTodosMonumentos(com.example.pr9.VolleyCallBack callBack) throws com.example.pr9.ServidorPHPException
+    public void obtenerTodosMonumentos(VolleyCallBack callBack) throws ServidorPHPException
     {
         ArrayList<Monumento> monumentos = new ArrayList<>();
         try
@@ -89,17 +94,17 @@ public class ControladorMonumento {
                                             }
                                             break;
                                         case RESULTADO_ERROR:
-                                            throw new com.example.pr9.ServidorPHPException("Error, datos incorrectos.");
+                                            throw new ServidorPHPException("Error, datos incorrectos.");
                                         case RESULTADO_ERROR_DESCONOCIDO:
-                                            throw new com.example.pr9.ServidorPHPException("Error obteniendo los datos del servidor.");
+                                            throw new ServidorPHPException("Error obteniendo los datos del servidor.");
                                     }
                                 }
                                 else
                                 {
-                                    throw new com.example.pr9.ServidorPHPException("Error obteniendo los datos del servidor.");
+                                    throw new ServidorPHPException("Error obteniendo los datos del servidor.");
                                 }
                             }
-                            catch (JSONException | com.example.pr9.ServidorPHPException error)
+                            catch (JSONException | ServidorPHPException error)
                             {
                                 System.out.println("Error -> " + error.toString());
                             }
@@ -120,14 +125,14 @@ public class ControladorMonumento {
         }
         catch(Exception error)
         {
-            throw new com.example.pr9.ServidorPHPException(error.toString());
+            throw new ServidorPHPException(error.toString());
         }
     }
 
     /**
      * Obtiene un monumento del servidor según su ID
      */
-    public void obtenerMonumentoID(String ID, com.example.pr9.VolleyCallBack callBack) throws com.example.pr9.ServidorPHPException
+    public void obtenerMonumentoID(String ID, VolleyCallBack callBack) throws ServidorPHPException
     {
         Monumento monumento = new Monumento();
         try
@@ -139,7 +144,7 @@ public class ControladorMonumento {
             HashMap<String, String> parametros = new HashMap<>();
             // Meto los parámetros
             parametros.put("ID", ID);
-            String urlfinal = com.example.pr9.Utilidades.buildURL(URLOBTENERMONUMENTO, parametros);
+            String urlfinal = Utilidades.buildURL(URLOBTENERMONUMENTO, parametros);
             Log.w("a", urlfinal);
             JsonArrayRequest jsonObjectRequest = new JsonArrayRequest(
                     Request.Method.GET,
@@ -181,17 +186,17 @@ public class ControladorMonumento {
                                             callBack.onSuccess(contexto, monumentos);
                                             break;
                                         case RESULTADO_ERROR:
-                                            throw new com.example.pr9.ServidorPHPException("Error, datos incorrectos.");
+                                            throw new ServidorPHPException("Error, datos incorrectos.");
                                         case RESULTADO_ERROR_DESCONOCIDO:
-                                            throw new com.example.pr9.ServidorPHPException("Error obteniendo los datos del servidor.");
+                                            throw new ServidorPHPException("Error obteniendo los datos del servidor.");
                                     }
                                 }
                                 else
                                 {
-                                    throw new com.example.pr9.ServidorPHPException("Error obteniendo los datos del servidor.");
+                                    throw new ServidorPHPException("Error obteniendo los datos del servidor.");
                                 }
                             }
-                            catch (JSONException | com.example.pr9.ServidorPHPException e)
+                            catch (JSONException | ServidorPHPException e)
                             {
                                 System.out.println("Error -> " + e.toString());
                             }
@@ -212,7 +217,7 @@ public class ControladorMonumento {
         }
         catch(Exception e)
         {
-            throw new com.example.pr9.ServidorPHPException("Error -> " + e.toString());
+            throw new ServidorPHPException("Error -> " + e.toString());
         }
         Log.w("a", monumento.ciudad);
     }
