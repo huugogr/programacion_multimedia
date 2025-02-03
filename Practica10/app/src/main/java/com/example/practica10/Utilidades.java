@@ -11,7 +11,11 @@ public final class Utilidades
     public static final int RESULTADO_ERROR = 2;
     public static final int RESULTADO_ERROR_DESCONOCIDO = 3;
 
+<<<<<<< HEAD
     public static final String URLSERVIDOR = "http://10.192.104.180/monumentos/";
+=======
+    public static final String URLSERVIDOR = "http://10.128.110.203/monumentos/";
+>>>>>>> 1ae5ced8c3868cbe34c4226feee37bcebe1bb993
 
     /**
      * Crea una URL válida con parámetros

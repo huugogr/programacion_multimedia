@@ -66,12 +66,18 @@ public class MainActivity extends AppCompatActivity {
         MapController mapController = (MapController) mapa.getController();
         Configuration.getInstance().setUserAgentValue("appIdMapPractice");
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1ae5ced8c3868cbe34c4226feee37bcebe1bb993
         GeoPoint startPoint = new GeoPoint(37.1773, -3.5986);
         mapa.getController().setCenter(startPoint);
         mapa.getController().setZoom(15.0);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1ae5ced8c3868cbe34c4226feee37bcebe1bb993
         ControladorMonumento controlador = new ControladorMonumento(getApplicationContext());
 
         try {
@@ -133,8 +139,15 @@ public class MainActivity extends AppCompatActivity {
         } catch (ServidorPHPException e) {
             throw new RuntimeException(e);
         }
+<<<<<<< HEAD
 
     }
 
 
 }
+=======
+    }
+
+
+}
+>>>>>>> 1ae5ced8c3868cbe34c4226feee37bcebe1bb993

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.example.practica9;
+=======
+package com.example.pr9;
+>>>>>>> 1ae5ced8c3868cbe34c4226feee37bcebe1bb993
 
 import android.net.Uri;
 
